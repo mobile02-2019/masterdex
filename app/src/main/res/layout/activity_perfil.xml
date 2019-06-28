@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Perfil"
+    android:orientation="vertical"
     android:background="@drawable/background_gradiente">
 
 
-</android.support.constraint.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/foto_perfil_circle_iv"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/porf_carvalho"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_color="@color/branco"
+        app:civ_border_width="2dp"
+         />
+
+    <TextView
+        android:id="@+id/nome_perfil_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Professor Carvalho"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        android:textSize="26sp"
+         />
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/cardview_principal_perfil"
+        android:layout_width="392dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="40dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+    </android.support.design.card.MaterialCardView>
+
+
+</LinearLayout>

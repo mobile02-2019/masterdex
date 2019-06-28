@@ -55,7 +55,7 @@ public class PokemonsActivity extends AppCompatActivity {
         buttonPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               irParaLogin();
+               irParaPerfil();
             }
         });
 
@@ -92,6 +92,12 @@ public class PokemonsActivity extends AppCompatActivity {
     private void irParaLogin() {
 
         Intent intent = new Intent(this,LoginActivity.class);
+        startActivity(intent);
+    }
+
+    private void irParaPerfil() {
+
+        Intent intent = new Intent(this, Perfil.class);
         startActivity(intent);
     }
 
