@@ -10,6 +10,12 @@
     android:background="@drawable/background_gradiente">
 
 
+    <Button
+        android:id="@+id/button_opcoes_perfil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="Button"
+        android:layout_gravity="right"/>
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/foto_perfil_circle_iv"
@@ -19,7 +25,6 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/porf_carvalho"
         android:layout_gravity="center_horizontal"
         app:civ_border_color="@color/branco"
         app:civ_border_width="2dp"
